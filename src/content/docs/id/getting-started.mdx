@@ -1,0 +1,68 @@
+---
+title: Memulai
+description: Pengenalan Dasar tentang Astro.
+i18nReady: true
+tableOfContents: false
+editUrl: false
+next: false
+banner:
+  content: |
+    <a href="https://astro.build/blog/astro-4/">Astro versi 4.0 telah hadir!</a>
+    Apakah Anda siap untuk melakukan peningkatan? <a href="/id/guides/upgrade-to/v4/">Baca panduan peningkatan kami</a>.
+hero:
+  title: Astro Docs
+  tagline: Panduan, sumber daya, dan referensi API untuk membantu Anda membangun dengan Astro.
+  actions:
+    - text: Mulai
+      icon: rocket
+      link: /id/install/auto/
+      variant: primary
+    - text: Pelajari tentang fitur-fitur Astro
+      icon: right-arrow
+      link: /id/concepts/why-astro/
+  facepile:
+    tagline: Didukung oleh Astro dan kontributor sumber terbuka kami.
+    linkText: Bergabung dengan kami!
+    link: /id/contribute/
+---
+
+import { CardGrid } from '@astrojs/starlight/components'
+import Card from '~/components/Landing/Card.astro'
+import ListCard from '~/components/Landing/ListCard.astro'
+import SplitCard from '~/components/Landing/SplitCard.astro'
+import Discord from '~/components/Landing/Discord.astro'
+
+<CardGrid>
+  <Card title="Apa yang akan Anda bangun dengan Astro?" icon="laptop">
+    Jelajahi [Tema starter Astro](https://astro.build/themes/) untuk blog, portofolio, dokumentasi, halaman arahan, SaaS, pemasaran, situs e-niaga, dan banyak lagi!
+  </Card>
+
+  <Card title="Ikuti tur dengan pemandu" icon="star">
+    Selesaikan pengantar kami [Tutorial Membuat Blog](/id/tutorial/0-introduction/) untuk mempelajari dasar-dasarnya dan membuat situs Astro pertama Anda.
+  </Card>
+
+  <SplitCard title="Mulai proyek baru" icon="rocket">
+    ```sh
+    # buat proyek baru dengan npm
+    npm create astro@latest
+    ```
+    
+    [Panduan instalasi](/id/install/auto/) kami memiliki petunjuk langkah demi langkah untuk menginstal Astro menggunakan wizard CLI, membuat proyek baru dari repositori Astro GitHub yang sudah ada, dan menginstal Astro secara manual.
+  </SplitCard>
+
+  <ListCard title="Pelajari" icon="open-book">
+    - [Fitur-fitur utama Astro](/id/concepts/why-astro/)
+    - [Arsitektur pulau](/id/concepts/islands/)
+    - [Komponen-komponen Astro](/id/core-concepts/astro-components/)
+    - [Sintaks template Astro](/id/core-concepts/astro-syntax/)
+  </ListCard>
+
+  <ListCard title="Perluas" icon="puzzle">
+    - [Tambahkan integrasi seperti React, dan Tailwind](/id/guides/integrations-guide/)
+    - [Buat koleksi konten yang _type-safe_](/id/guides/content-collections/)
+    - [Menyempurnakan navigasi dengan transisi tampilan](/id/guides/view-transitions/)
+    - [Menghubungkan _headless_ CMS ke proyek Anda](/id/guides/cms/)
+  </ListCard>
+</CardGrid>
+
+<Discord title="Punya pertanyaan atau ingin terlibat?" cta="Bergabunglah dengan Discord kami"/>
